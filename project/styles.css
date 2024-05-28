@@ -1,0 +1,516 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.header {
+    background-image: linear-gradient(rgba(71, 65, 65, 0.7), rgba(0, 0, 0, 0.7)), url("daniel-chen-cNaEqXSsZ0k-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+nav img {
+    width: 120px;
+    height: 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 7%;
+
+}
+
+nav li a {
+    text-decoration: none;
+
+}
+
+nav li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+
+}
+
+.nav-links ul li {
+    display: inline-block;
+    padding: 5px;
+    font-size: small;
+
+}
+
+.Biggest h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 5px;
+    font-size: 45px;
+}
+
+.Biggest p {
+    color: white;
+    font-size: 12px;
+
+}
+
+.Biggest {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    width: 80%;
+    text-align: center;
+}
+
+.btn {
+    background-color: transparent;
+    position: relative;
+    display: inline-block;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: 1.5s;
+}
+
+nav .fa {
+    display: none;
+}
+
+.nav-links .fa {
+    display: none;
+}
+
+.btn:hover {
+    background-color: lightblue;
+}
+
+.nav-links ul li::after {
+    content: "";
+    width: 0%;
+    transition: 1s;
+    height: 2px;
+    display: block;
+    transition: 1s;
+    background: red;
+    margin: auto;
+
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+@media screen and (max-width:700px) {
+
+    .nav-links ul li {
+        display: block;
+        padding: 10px;
+       
+    }
+
+    .nav-links ul li:hover::after {
+        width: 0%;
+        
+    }
+    .Biggest p{
+font-size: large;
+margin-top:20px ;
+    }
+    .Biggest h1{
+        font-size: 70px;
+        margin-top:20px ;
+            }
+
+    .nav-links {
+        background-color: orange;
+        width: 200px;
+        z-index: 2;
+        height: 100vh;
+        text-align: left;
+        position: fixed;
+        right: 0%;
+        transition: 1.5s;
+        padding: 10px;
+        top: 0%;
+        z-index: 0px;
+    }
+
+    nav .fa {
+        display: block;
+    }
+
+    .nav-links .fa {
+        display: block;
+    }
+
+    .container2 {
+        flex-direction: column;
+    }
+
+    .library-row{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .Anamika{
+        flex-direction: column; 
+        gap: 10px;
+    }
+    .row{
+        flex-direction: column; 
+        gap: 10px;
+    }
+    .Eduford img{
+        height: 10%;
+        width: 20px;
+    }
+    .text-img{
+    text-align: center;
+    transition-duration: 0s;
+    transition:1.5s;
+    }
+    
+   
+    }
+    /* .Programs.one, .Programs.two {
+        display: flex;
+        flex-direction: row;
+        gap: 9px;
+        
+    }
+    .Programs.two{
+        flex-direction: row-reverse;
+    }
+
+    .Programs.one .pic, .Programs.two .pic {
+        flex: 45%;
+    }
+
+    .Programs.one .pic img, .Programs.two .pic img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .Programs.one .details, .Programs.two .details {
+        flex: 55%;
+    } */
+
+    
+
+
+}
+
+.container {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+.container p {
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+.container h1 {
+    font-size: 200%;
+    margin-top: 20px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin-bottom: 20px;
+    width: 80%;
+    margin: auto;
+
+}
+
+.Undergraduate {
+    flex-basis: 32%;
+    background-color: brown;
+    border-radius: 8px;
+    margin-top: 15px;
+    text-align: center;
+    height: 50vh;
+}
+
+.Undergraduate:hover{
+    box-shadow: 0px 0px 20px 0px black;
+    transition: 1s;
+}
+
+.Campus {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  
+}
+.Campus p{
+    margin-bottom: 50px;
+}
+.Campus h1{
+    margin-top:30px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row img {
+    width: 100%;
+    border-radius: 5px;
+    
+}
+
+.campus-col {
+    flex-basis: 32%;
+    position: relative;
+
+}
+.layer {
+    position: absolute;
+    left: 50%;
+    background-color: transparent;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transform: translate(-50%);
+
+}
+
+.layer h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+
+}
+
+.layer:hover {
+    background-color: rgba(71, 65, 65, 0.7);
+    transition: 1S;
+    border-radius: 5px;
+}
+
+.layer:hover h3 {
+    margin-bottom: 72%;
+    opacity: 1;
+    transition: 1S;
+}
+
+.Facilities {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.Facilities h1 {
+    margin-top: 50px;
+}
+
+.Facilities p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Facilities img {
+    border-radius: 10px;
+    width: 100%;
+
+}
+
+.library-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Programs {
+    flex-basis: 32%;
+}
+
+.Programs p {
+    opacity: 0.8;
+    text-align: left;
+    font-size: 80%;
+    display: block;
+}
+
+.Student{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.Student h2{
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+.Student p{
+    opacity: 0.7;
+}
+.Anamika p{
+    opacity: 1;
+}
+.Anamika{
+    background-color: rgb(162, 109, 145);
+    display: flex;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;
+    gap: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    height: 40vh;
+}
+.Anamika img{
+     border-radius: 100px;
+     width: 40px;
+     height: 40px;
+}
+.Anamika-parent{
+    display: flex;
+    gap: 20px;
+}
+.Anamika h3{
+padding-top: 5px;
+}
+.Eduford{
+    position: relative;
+    margin-top: 20px;
+}
+.Eduford img{
+    background-image: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: 100%;
+    border-radius: 10px;
+    background-image: linear-gradient(rgb(0, 0, 0), rgba(0,0,0,)),url("daniel-chen-cNaEqXSsZ0k-unsplash.jpg")
+    margin-bottom:10% ;
+}
+.text-img{
+    position: absolute;
+    top: 0px;
+    text-align: center;
+    
+    width: 100%;
+    
+}
+.Eduford h1{
+    color: white;
+    padding-top: 10%;
+    font-size: 30px;
+}
+.Online{
+   padding-top:-50px ;
+  padding-bottom: -50px;
+    font-weight: 300px;
+}
+.Eduford button{
+    width: 100px;
+    height:30px;
+    border-color: white;
+    background-color: transparent;
+    color: white;
+   
+    text-decoration: none;
+    margin-top: 20px;
+}
+.Eduford button:hover{
+    background-color: rgb(65, 65, 178);
+    transition: 1s;
+    border-color: rgb(65, 65, 178);;
+}
+.About-Us{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+.About{
+    font-size: small;
+    margin-top: 14%;
+}
+.About h2{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.About p{
+opacity: 0.7;
+}
+.end{
+    font-size: small;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.end a{
+text-decoration: none;
+color: rgb(49, 49, 220);
+}
+.icons{
+    margin-bottom: 10px;
+}
+.icons i{
+gap: 20px;
+}
+/*****************ABOUT**********/
+.second-header{
+        background-image: linear-gradient(rgba(33, 30, 30, 0.7), rgba(0, 0, 0, 0.7)), url("background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 60vh;
+        width: 100%;
+}
+.platform{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+   
+}
+.largest{
+    display: flex;
+    text-align: left;
+    margin-top: 10%;
+    flex-basis: 40%;
+}
+.largest p{
+    margin-bottom: 20px;
+}
+.largest img{
+width: 100%;
+height: 100%;
+}
+.largest p{
+    opacity: 0.7;
+}
+.largest h1{
+    margin-bottom: 5%;
+}
+.but{
+border: 1px solid rgb(252, 5, 5);
+padding: 10px 20px;
+background-color: transparent;
+text-decoration: none;
+color: rgb(61, 61, 195);
+font-size: 10px;
+}
+.but:hover{
+    transition: 1.5s;
+    background-color: rgb(50, 50, 202);
+    color:rgb(255, 255, 255);
+    border: 1px solid rgb(50, 50, 202); 
+
+}
